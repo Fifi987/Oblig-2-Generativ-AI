@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hjemmeinnredning Nettbutikk</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Hjemmeinnredning</h1>
+    <nav>
+      <a href="#home">Hjem</a>
+      <a href="#cart">Handlekurv</a>
+    </nav>
+  </header>
+
+  <!-- Produktoversikt -->
+  <section id="home">
+    <h2>Våre Produkter</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="img/puter.png" alt="Dekorative puter">
+        <h3>Dekorative puter og pledd</h3>
+        <p>Fra kr 249,-</p>
+        <button onclick="addToCart('Dekorative puter og pledd')">Legg i handlekurv</button>
+      </div>
+      <div class="product-card">
+        <img src="img/plakater.png" alt="Veggbilder og plakater">
+        <h3>Veggbilder og plakater</h3>
+        <p>Fra kr 299,-</p>
+        <button onclick="addToCart('Veggbilder og plakater')">Legg i handlekurv</button>
+      </div>
+      <div class="product-card">
+        <img src="img/candles.png" alt="Duftlys og romdiffusere">
+        <h3>Duftlys og romdiffusere</h3>
+        <p>Fra kr 199,-</p>
+        <button onclick="addToCart('Duftlys og romdiffusere')">Legg i handlekurv</button>
+      </div>
+      <div class="product-card">
+        <img src="img/vases.png" alt="Planter og vaser">
+        <h3>Planter og vaser</h3>
+        <p>Fra kr 349,-</p>
+        <button onclick="addToCart('Planter og vaser')">Legg i handlekurv</button>
+      </div>
+      <div class="product-card">
+        <img src="img/boxes.png" alt="Oppbevaringskurver og bokser">
+        <h3>Oppbevaringskurver og bokser</h3>
+        <p>Fra kr 199,-</p>
+        <button onclick="addToCart('Oppbevaringskurver og bokser')">Legg i handlekurv</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Handlekurv -->
+<section id="cart">
+    <h2>Handlekurv</h2>
+    <ul id="cart-items"></ul>
+    <p id="total"></p>
+    <button onclick="checkout()">Betal</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
